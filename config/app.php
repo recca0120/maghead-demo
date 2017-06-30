@@ -167,7 +167,8 @@ return [
          * Package Service Providers...
          */
         Laravel\Tinker\TinkerServiceProvider::class,
-
+        Maghead\Laravel\MagheadServiceProvider::class,
+        
         /*
          * Application Service Providers...
          */
