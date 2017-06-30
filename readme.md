@@ -82,3 +82,9 @@ php artisan maghead:schema build
 ```bash
 php artisan maghead:sql
 ```
+
+## Create TodoController
+
+```bash
+php artisan make:controller TodoController --resource
+```
