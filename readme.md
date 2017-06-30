@@ -8,3 +8,13 @@ Begin by installing this package through Composer. Edit your project's `composer
 ```bash
 composer require maghead/maghead-bridge
 ```
+
+Next, add your new provider to the providers array of `config/app.php`:
+
+```php
+'providers' => [
+    // ...
+    Maghead\Laravel\MagheadServiceProvider::class,
+    // ...
+];
+```
