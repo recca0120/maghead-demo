@@ -67,3 +67,9 @@ class TodoSchema extends DeclareSchema
     }
 }
 ```
+
+建立 Model, Repo, Collection
+
+```bash
+php artisan maghead:schema build
+```
