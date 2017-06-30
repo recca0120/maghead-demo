@@ -76,3 +76,9 @@ class TodoSchema extends DeclareSchema
 ```bash
 php artisan maghead:schema build
 ```
+
+## Building tables
+
+```bash
+php artisan maghead:sql
+```
