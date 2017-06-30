@@ -35,3 +35,11 @@ DB_DATABASE=homestead
 DB_USERNAME=homestead
 DB_PASSWORD=secret
 ```
+
+## Creating Database
+
+If you want to use PostgreSQL or MySQL as your backend database, you can create your database through the `maghead:db create` command:
+
+```bash
+php artisan maghead:db create master
+```
