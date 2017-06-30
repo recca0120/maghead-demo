@@ -43,3 +43,36 @@ If you want to use PostgreSQL or MySQL as your backend database, you can create 
 ```bash
 php artisan maghead:db create master
 ```
+
+## Adding Schema
+
+Put the content below the the file `app/Model/TodoSchema.php`:
+
+```php
+<?php
+
+namespace App\Model;
+
+use Maghead\Schema\DeclareSchema;
+
+class TodoSchema extends DeclareSchema
+{
+    public function schema()
+    {
+        $this->column('title')
+            ->varchar(80)
+            ->label('Todo');
+
+        $this->column('done')
+            ->boolean()
+            ->label('Done')
+            ->default(false);
+    }
+}
+```
+
+## Building the static class
+
+```bash
+php artisan maghead:schema build
+```
