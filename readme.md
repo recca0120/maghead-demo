@@ -38,3 +38,32 @@ DB_PASSWORD=secret
 ```bash
 php artisan maghead:db create master
 ```
+
+
+
+設定 Schema
+
+`app/Model/TodoSchema.php`
+
+```php
+<?php
+
+namespace App\Model;
+
+use Maghead\Schema\DeclareSchema;
+
+class TodoSchema extends DeclareSchema
+{
+    public function schema()
+    {
+        $this->column('title')
+            ->varchar(80)
+            ->label('Todo');
+
+        $this->column('done')
+            ->boolean()
+            ->label('Done')
+            ->default(false);
+    }
+}
+```
