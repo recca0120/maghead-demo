@@ -19,3 +19,22 @@ composer require maghead/laravel-bridge
 ```bash
 php artisan vendor:publish --provider="Maghead\Laravel\MagheadServiceProvider"
 ```
+
+
+
+修改 .env 設定資料庫
+
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=homestead
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+```
+
+建立資料庫
+
+```bash
+php artisan maghead:db create master
+```
