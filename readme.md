@@ -18,3 +18,9 @@ Next, add your new provider to the providers array of `config/app.php`:
     // ...
 ];
 ```
+
+Publish the storage configuration file.
+
+```bash
+php artisan vendor:publish --provider="Maghead\Laravel\MagheadServiceProvider"
+```
